@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
 import { Check, Star } from "lucide-react";
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <div className="bg-slate-50">
       <section>
-        <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52">
+        <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-32 xl:pt-24 ">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
@@ -63,6 +64,17 @@ export default function Home() {
               <img src="/line.png" className="absolute w-20 -left-6 -bottom-6 select-none" alt="line" />
               <Phone className="w-64" imgSrc="/testimonials/1.jpg"  />
             </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      <section className="bg-slate-100 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-balance text-center !leading-tight font-bold text-5xl md:text-6xl text-gray-900">What our 
+              <span className="relative px-2">costumers <Icons.underline classname='hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500' />              
+              </span>say
+            </h2>
           </div>
         </MaxWidthWrapper>
       </section>
